@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public InputAction moveAction;
 
-    public float speed = 3f;
+    public float speed = 1f;
 
     void OnEnable()
     {
