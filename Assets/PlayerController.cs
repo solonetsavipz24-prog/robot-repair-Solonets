@@ -23,6 +23,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveInput.x, moveInput.y, 0f);
 
-        transform.position += movement * speed * Time.deltaTime;
+        transform.position += new Vector3(0f, movement.y, 0f) * speed * Time.deltaTime;
     }
 }
