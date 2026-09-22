@@ -5,7 +5,7 @@ public class PlayerController : MonoBehaviour
 {
     public InputAction moveAction;
 
-    public float speed = 1f;
+    public float speed = 3f;
 
     void OnEnable()
     {
@@ -23,6 +23,6 @@ public class PlayerController : MonoBehaviour
 
         Vector3 movement = new Vector3(moveInput.x, moveInput.y, 0f);
 
-        transform.position += new Vector3(0f, movement.y, 0f) * speed * Time.deltaTime;
+        transform.position += movement * speed * Time.deltaTime;
     }
 }
